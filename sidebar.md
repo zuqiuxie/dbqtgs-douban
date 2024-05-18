@@ -1,8 +1,6 @@
 # [ECMAScript 6 入门]()
 
-作者：[阮一峰](https://www.ruanyifeng.com)
-
-授权：`<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">`署名-非商用许可证`</a>`
+作者：[安之龙](https://read.douban.com/author/63695260/)
 
 ## 目录
 

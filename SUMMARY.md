@@ -1,7 +1,7 @@
 # Summary
 
-* [0. 前言](README.md)
-* [1. ECMAScript 6简介](docs/intro.md)
+* [0. 简介](README.md)
+* [1. 意外的关系](docs/c1-01.md)
 * [2. let 和 const 命令](docs/let.md)
 * [3. 变量的解构赋值](docs/destructuring.md)
 * [4. 字符串的扩展](docs/string.md)
