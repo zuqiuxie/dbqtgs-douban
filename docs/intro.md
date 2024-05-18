@@ -1,6 +1,7 @@
-# ECMAScript 6 简介
+# 意外的关系
 
-ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在 2015 年 6 月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企业级开发语言。
+“ 我们看错了世界，
+却说世界欺骗了我们。”   — 泰戈尔
 
 ## ECMAScript 和 JavaScript 的关系
 
@@ -24,7 +25,7 @@ ECMAScript 2015（简称 ES2015）这个词，也是经常可以看到的。它�
 
 标准委员会最终决定，标准在每年的 6 月份正式发布一次，作为当年的正式版本。接下来的时间，就在这个版本的基础上做改动，直到下一年的 6 月份，草案就自然变成了新一年的版本。这样一来，就不需要以前的版本号了，只要用年份标记就可以了。
 
-ES6 的第一个版本，就这样在 2015 年 6 月发布了，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。2016 年 6 月，小幅修订的《ECMAScript 2016 标准》（简称 ES2016）如期发布，这个版本可以看作是 ES6.1 版，因为两者的差异非常小（只新增了数组实例的`includes`方法和指数运算符），基本上是同一个标准。根据计划，2017 年 6 月发布 ES2017 标准。
+ES6 的第一个版本，就这样在 2015 年 6 月发布了，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。2016 年 6 月，小幅修订的《ECMAScript 2016 标准》（简称 ES2016）如期发布，这个版本可以看作是 ES6.1 版，因为两者的差异非常小（只新增了数组实例的 `includes`方法和指数运算符），基本上是同一个标准。根据计划，2017 年 6 月发布 ES2017 标准。
 
 因此，ES6 既是一个历史名词，也是一个泛指，含义是 5.1 版以后的 JavaScript 的下一代标准，涵盖了 ES2015、ES2016、ES2017 等等，而 ES2015 则是正式名称，特指该年发布的正式版本的语言标准。本书中提到 ES6 的地方，一般是指 ES2015 标准，但有时也是泛指“下一代 JavaScript 语言”。
 
@@ -102,9 +103,9 @@ input.map(function (item) {
 $ npm install --save-dev @babel/core
 ```
 
-### 配置文件`.babelrc`
+### 配置文件 `.babelrc`
 
-Babel 的配置文件是`.babelrc`，存放在项目的根目录下。使用 Babel 的第一步，就是配置这个文件。
+Babel 的配置文件是 `.babelrc`，存放在项目的根目录下。使用 Babel 的第一步，就是配置这个文件。
 
 该文件用来设置转码规则和插件，基本格式如下。
 
@@ -125,7 +126,7 @@ $ npm install --save-dev @babel/preset-env
 $ npm install --save-dev @babel/preset-react
 ```
 
-然后，将这些规则加入`.babelrc`。
+然后，将这些规则加入 `.babelrc`。
 
 ```javascript
   {
@@ -137,11 +138,11 @@ $ npm install --save-dev @babel/preset-react
   }
 ```
 
-注意，以下所有 Babel 工具和模块的使用，都必须先写好`.babelrc`。
+注意，以下所有 Babel 工具和模块的使用，都必须先写好 `.babelrc`。
 
 ### 命令行转码
 
-Babel 提供命令行工具`@babel/cli`，用于命令行转码。
+Babel 提供命令行工具 `@babel/cli`，用于命令行转码。
 
 它的安装命令如下。
 
@@ -173,7 +174,7 @@ $ npx babel src -d lib -s
 
 ### babel-node
 
-`@babel/node`模块的`babel-node`命令，提供一个支持 ES6 的 REPL 环境。它支持 Node 的 REPL 环境的所有功能，而且可以直接运行 ES6 代码。
+`@babel/node`模块的 `babel-node`命令，提供一个支持 ES6 的 REPL 环境。它支持 Node 的 REPL 环境的所有功能，而且可以直接运行 ES6 代码。
 
 首先，安装这个模块。
 
@@ -181,7 +182,7 @@ $ npx babel src -d lib -s
 $ npm install --save-dev @babel/node
 ```
 
-然后，执行`babel-node`就进入 REPL 环境。
+然后，执行 `babel-node`就进入 REPL 环境。
 
 ```bash
 $ npx babel-node
@@ -189,7 +190,7 @@ $ npx babel-node
 2
 ```
 
-`babel-node`命令可以直接运行 ES6 脚本。将上面的代码放入脚本文件`es6.js`，然后直接运行。
+`babel-node`命令可以直接运行 ES6 脚本。将上面的代码放入脚本文件 `es6.js`，然后直接运行。
 
 ```bash
 # es6.js 的代码
@@ -200,13 +201,13 @@ $ npx babel-node es6.js
 
 ### @babel/register 模块
 
-`@babel/register`模块改写`require`命令，为它加上一个钩子。此后，每当使用`require`加载`.js`、`.jsx`、`.es`和`.es6`后缀名的文件，就会先用 Babel 进行转码。
+`@babel/register`模块改写 `require`命令，为它加上一个钩子。此后，每当使用 `require`加载 `.js`、`.jsx`、`.es`和 `.es6`后缀名的文件，就会先用 Babel 进行转码。
 
 ```bash
 $ npm install --save-dev @babel/register
 ```
 
-使用时，必须首先加载`@babel/register`。
+使用时，必须首先加载 `@babel/register`。
 
 ```bash
 // index.js
@@ -214,20 +215,20 @@ require('@babel/register');
 require('./es6.js');
 ```
 
-然后，就不需要手动对`index.js`转码了。
+然后，就不需要手动对 `index.js`转码了。
 
 ```bash
 $ node index.js
 2
 ```
 
-需要注意的是，`@babel/register`只会对`require`命令加载的文件转码，而不会对当前文件转码。另外，由于它是实时转码，所以只适合在开发环境使用。
+需要注意的是，`@babel/register`只会对 `require`命令加载的文件转码，而不会对当前文件转码。另外，由于它是实时转码，所以只适合在开发环境使用。
 
 ### polyfill
 
-Babel 默认只转换新的 JavaScript 句法（syntax），而不转换新的 API，比如`Iterator`、`Generator`、`Set`、`Map`、`Proxy`、`Reflect`、`Symbol`、`Promise`等全局对象，以及一些定义在全局对象上的方法（比如`Object.assign`）都不会转码。
+Babel 默认只转换新的 JavaScript 句法（syntax），而不转换新的 API，比如 `Iterator`、`Generator`、`Set`、`Map`、`Proxy`、`Reflect`、`Symbol`、`Promise`等全局对象，以及一些定义在全局对象上的方法（比如 `Object.assign`）都不会转码。
 
-举例来说，ES6 在`Array`对象上新增了`Array.from`方法。Babel 就不会转码这个方法。如果想让这个方法运行，可以使用`core-js`和`regenerator-runtime`(后者提供generator函数的转码)，为当前环境提供一个垫片。
+举例来说，ES6 在 `Array`对象上新增了 `Array.from`方法。Babel 就不会转码这个方法。如果想让这个方法运行，可以使用 `core-js`和 `regenerator-runtime`(后者提供generator函数的转码)，为当前环境提供一个垫片。
 
 安装命令如下。
 
@@ -245,7 +246,7 @@ require('core-js');
 require('regenerator-runtime/runtime');
 ```
 
-Babel 默认不转码的 API 非常多，详细清单可以查看`babel-plugin-transform-runtime`模块的[definitions.js](https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-runtime/src/runtime-corejs3-definitions.js)文件。
+Babel 默认不转码的 API 非常多，详细清单可以查看 `babel-plugin-transform-runtime`模块的[definitions.js](https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-runtime/src/runtime-corejs3-definitions.js)文件。
 
 ### 浏览器环境
 
@@ -261,4 +262,3 @@ Babel 也可以用于浏览器环境，使用[@babel/standalone](https://babeljs
 注意，网页实时将 ES6 代码转为 ES5，对性能会有影响。生产环境需要加载已经转码完成的脚本。
 
 Babel 提供一个[REPL 在线编译器](https://babeljs.io/repl/)，可以在线将 ES6 代码转为 ES5 代码。转换后的代码，可以直接作为 ES5 代码插入网页运行。
-
