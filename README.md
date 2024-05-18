@@ -1,12 +1,10 @@
-# ES6 入门教程
+# 《东北窃听故事》
 
-- [官方镜像](https://wangdoc.com/es6/)
-- [JavaScript 教程](https://wangdoc.com/javascript)
-- [TypeScript 教程](https://wangdoc.com/typescript)
+- [《东北窃听故事》豆瓣阅读](https://read.douban.com/column/32678264/)
 
-《ECMAScript 6 入门教程》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新引入的语法特性。
+二十多年前，我在东北小城的电话机房工作，因为一次偶然的窃听而彻底改变了命运。现侨居新西兰的我接到了一个意外的电话，这个电话把我带回了阔别多年的故乡小城，让我去揭开二十年前那改变多人命运的“窃听”事件的真相。
 
-[![cover](images/cover_thumbnail_3rd.jpg)](images/cover-3rd.jpg)
+[![cover](images/cover.jpg)](images/cover.jpg)
 
 本书覆盖 ES6 与上一个版本 ES5 的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码。
 
@@ -25,4 +23,3 @@
 只要保持原作者署名和非商用，您可以自由地阅读、分享、修改本书。
 
 详细的法律条文请参见[创意共享](http://creativecommons.org/licenses/by-nc/4.0/)网站。
-
