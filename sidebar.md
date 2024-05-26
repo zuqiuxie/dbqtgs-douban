@@ -70,3 +70,11 @@
 - [源码](https://github.com/ruanyf/es6tutorial/)
 - [修订历史](https://github.com/ruanyf/es6tutorial/commits/gh-pages)
 - [反馈意见](https://github.com/ruanyf/es6tutorial/issues)
+
+
+
+```text
+>>>第一层嵌套引用
+>>第二层嵌套引用
+>第三层嵌套引用
+```
