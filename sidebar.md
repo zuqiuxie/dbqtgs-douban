@@ -6,6 +6,7 @@
 
 1. [简介](#README)
 2. [第一章](#docs/b1)
+   1. [测试](#docs/c1-07)
 3. [意外的关系](#docs/c1-01)
 4. [上面没人的人](#docs/c1-02)
 5. [回乡](#docs/c1-03)
@@ -70,11 +71,3 @@
 - [源码](https://github.com/ruanyf/es6tutorial/)
 - [修订历史](https://github.com/ruanyf/es6tutorial/commits/gh-pages)
 - [反馈意见](https://github.com/ruanyf/es6tutorial/issues)
-
-
-
-```text
->>>第一层嵌套引用
->>第二层嵌套引用
->第三层嵌套引用
-```
