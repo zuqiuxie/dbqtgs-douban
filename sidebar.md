@@ -1,3 +1,9 @@
+[首页](https://book.wangbin.run/)
+
+---
+
+
+
 # [《东北窃听故事》]()
 
 作者：[安之龙](https://read.douban.com/author/63695260/)
