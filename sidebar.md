@@ -66,6 +66,6 @@
 
 ## 其他
 
-- [源码](https://github.com/ruanyf/es6tutorial/)
-- [修订历史](https://github.com/ruanyf/es6tutorial/commits/gh-pages)
-- [反馈意见](https://github.com/ruanyf/es6tutorial/issues)
+- [源码](https://github.com/zuqiuxie/dbqtgs-douban/)
+- [修订历史](https://github.com/zuqiuxie/dbqtgs-douban/commits/gh-pages)
+- [反馈意见](https://github.com/zuqiuxie/dbqtgs-douban/issues)
